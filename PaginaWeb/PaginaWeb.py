@@ -1,6 +1,5 @@
 import reflex as rx
  
-# ── Colores ───────────────────────────────────────────────────────────────────
 MINT   = "#7EC8A4"
 LILA   = "#C9B8E8"
 CREAM  = "#F5F0E8"
@@ -29,26 +28,18 @@ LINK = dict(
     _hover={"text_decoration": "underline"},
 )
  
- 
-# ══════════════════════════════════════════════════════════════════════════════
-# PÁGINAS SIMPLES
-# ══════════════════════════════════════════════════════════════════════════════
- 
+
 def pago() -> rx.Component:
     return rx.box(
-        rx.text("Pagina de pago", font_size="2rem", font_weight="900", color=BLACK),
+        rx.text("Pagina de pago", font_size="2rem", font_weight="900", color=WHITE),
     )
  
  
 def suscripcion() -> rx.Component:
     return rx.box(
-        rx.text("Pagina de suscripcion", font_size="2rem", font_weight="900", color=BLACK),
+        rx.text("Pagina de suscripcion", font_size="2rem", font_weight="900", color=WHITE),
     )
  
- 
-# ══════════════════════════════════════════════════════════════════════════════
-# COMPONENTES PÁGINA PRINCIPAL
-# ══════════════════════════════════════════════════════════════════════════════
  
 def navbar() -> rx.Component:
     return rx.hstack(
@@ -468,10 +459,6 @@ def footer() -> rx.Component:
     )
  
  
-# ══════════════════════════════════════════════════════════════════════════════
-# INDEX
-# ══════════════════════════════════════════════════════════════════════════════
- 
 def index() -> rx.Component:
     return rx.box(
         navbar(),
@@ -487,9 +474,6 @@ def index() -> rx.Component:
     )
  
  
-# ══════════════════════════════════════════════════════════════════════════════
-# APP
-# ══════════════════════════════════════════════════════════════════════════════
  
 app = rx.App(
     stylesheets=[

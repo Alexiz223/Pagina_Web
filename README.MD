@@ -28,19 +28,32 @@ Node.js 18+
 
 Instalación
 1. Clonar el repositorio
-bashgit clone https://github.com/Alexiz223/Pagina_Web.git
+
+git clone https://github.com/Alexiz223/Pagina_Web.git
+
 2. Entrar al proyecto
+
 cd Pagina_Web
+
 3. Crear entorno virtual
+
 python -m venv venv
+
 4. Activar entorno virtual
+
 venv\Scripts\activate
+
 5. Instalar dependencias
+
 bashpip install -r requirements.txt
+
 6. Inicializar Reflex
+
 reflex init
 
 Ejecutar el proyecto
+
 reflex run
+
 Luego abrir en el navegador:
 http://localhost:3000
